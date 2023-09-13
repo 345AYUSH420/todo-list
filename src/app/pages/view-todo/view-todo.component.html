@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="card border-0 shadow-sm my-4">
+        <div class="card-body">
+          <h3>All Todos</h3>
+          <app-todo-view
+            *ngFor="let todo of todos"
+            [todo]="todo"
+          ></app-todo-view>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

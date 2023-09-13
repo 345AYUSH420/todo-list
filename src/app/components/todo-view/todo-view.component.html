@@ -1,0 +1,19 @@
+<div class="card">
+  <div
+    class="card-body"
+    [ngClass]="{
+      'bg-success': todo.complete,
+      'text-white': todo.complete,
+      'bg-warning': !todo.complete
+    }"
+  >
+    <h3>{{ todo.title }}</h3>
+    <p>
+      {{ todo.content }}
+    </p>
+    <div class="container">
+      <button class="btn btn-danger btn-sm">Delete</button>
+      <button class="btn btn-primary btn-sm ms-4">Update</button>
+    </div>
+  </div>
+</div>
